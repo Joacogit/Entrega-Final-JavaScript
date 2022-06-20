@@ -1,0 +1,14 @@
+@mixin titulos ($display, $alineacion, $color) {
+    display: $display;
+    justify-content: $alineacion;
+    color: $color;
+
+}
+
+h1 {
+    @include titulos(flex, center, nth($colores,1))
+}
+
+h2 {
+    @include titulos(flex, center, nth($colores,1))
+}

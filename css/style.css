@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/* _______ Media Query_______ */
+@media (max-width: 991px) {
+  h1 {
+    font-size: 20px; }
+  h2 {
+    display: none; }
+  .animacionLogo {
+    width: 50%;
+    height: 50%; }
+  .animacionLogo:hover {
+    transform: none; }
+  .social {
+    justify-content: center; } }
+
+.nav-item:hover, .navbar-brand:hover {
+  border: 1px transparent black;
+  border-radius: 3px;
+  text-transform: uppercase; }
+
+/*      BOTONES del menu */
+.nav-item:hover {
+  background-color: #b1a591; }
+
+/*      BOTON = vuelve al index    */
+.navbar-brand:hover {
+  background-color: darkgrey; }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: darkgrey; }
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: darkgrey; }
+
+header {
+  background-image: url(../images/fondomadera.jpg);
+  grid-area: auto;
+  padding-top: 20px;
+  /*________  LOGO _______*/ }
+  header h1 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: darkgrey; }
+  header h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: darkgrey; }
+  header .animacionLogo {
+    width: 80px;
+    height: 80px;
+    padding-left: 15px;
+    transition: all 3s; }
+  header .animacionLogo:hover {
+    transform: scale(1.5) translateX(120px) rotate(360deg); }
+
+/* _______ Media _______ */
+@media (max-width: 991px) {
+  h1 {
+    font-size: 20px; }
+  h2 {
+    display: none; }
+  .animacionLogo:hover {
+    transform: none; } }
+
+body {
+  font-family: 'Nunito'; }
+
+footer {
+  background-color: beige;
+  width: 100%;
+  /* ______________ ICONOS __________________ */ }
+  footer .social {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 30px 30px 30px;
+    list-style: none; }
+  footer .social li {
+    padding-inline: 10px; }
+  footer .socialIcons:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    opacity: 2; }
+
+/* ______ 1º INDEX _______________*/
+main {
+  background-repeat: no-repeat;
+  background-position: cover; }
+  main .card-text {
+    text-align: justify;
+    background-color: #faf8f5; }
+  main .parrafo-principal {
+    display: flex; }
+
+/*__ 2º NOSOTROS _______________       */
+.nosotros {
+  height: 70vh;
+  /* alto del navegador */
+  display: grid;
+  /* activa el GRID */
+  grid-template-rows: repeat 2, 1fr;
+  /* alt de cada area */
+  grid-template-columns: repeat 3, 1fr;
+  /* ancho de cada area */
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+
+/*____ 3º - PRODUCTOS ______________ */
+.card img {
+  max-width: 100%;
+  height: 240px;
+  object-fit: cover; }
+
+.card-link {
+  width: max-content; }
+
+h5 {
+  font-weight: bold; }
+
+/*___ 4º - GALERIA _________________ */
+.main-galeria1 {
+  background-color: #0d1113; }
+
+.fotos {
+  background-color: #0d1113;
+  height: 300px;
+  padding: 2%; }
+
+.img_galeria:hover {
+  transform: scale(1.1);
+  transition: transform 1.5s ease-in-out; }
+
+/* ___ 5º - CONTACTO _________________*/
+.formulario {
+  background-image: url(../images/iluminacion-para-habitaciones.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: beige; }
+
+.fondoFooterContacto {
+  background-image: url(../images/imgfootercontacto.jpg);
+  background-size: cover; }
+
+/*# sourceMappingURL=style.css.map */

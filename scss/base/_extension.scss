@@ -1,0 +1,26 @@
+ //estilos q afectan a mas de 1 de seccion
+
+ %botones{
+    border: 1px transparent black;
+    border-radius: 3px;
+    text-transform: uppercase;
+    
+  
+    
+ }
+
+    
+    /*      BOTONES del menu */
+    .nav-item:hover{
+        background-color: nth($colores,2);
+        @extend %botones;
+    }
+
+    /*      BOTON = vuelve al index    */
+    .navbar-brand:hover{
+        background-color: nth($colores,1);
+        @extend %botones;
+    }
+ 
+
+ 
