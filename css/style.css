@@ -2,6 +2,7 @@
 /* _______ Media Query_______ */
 @media (max-width: 991px) {
   h1 {
+    padding: 50px;
     font-size: 20px; }
   h2 {
     display: none; }
@@ -95,7 +96,10 @@ main {
     text-align: justify;
     background-color: #faf8f5; }
   main .parrafo-principal {
-    display: flex; }
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px; }
 
 /*__ 2º NOSOTROS _______________       */
 .nosotros {
@@ -130,7 +134,6 @@ h5 {
 
 .fotos {
   background-color: #0d1113;
-  height: 300px;
   padding: 2%; }
 
 .img_galeria:hover {
