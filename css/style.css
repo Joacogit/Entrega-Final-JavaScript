@@ -9,10 +9,12 @@
   .animacionLogo {
     width: 50%;
     height: 50%; }
-  .animacionLogo:hover {
+  .animacionLogo {
     transform: none; }
   .social {
-    justify-content: center; } }
+    justify-content: center; }
+  .logo_footer {
+    height: min-content; } }
 
 .nav-item:hover, .navbar-brand:hover {
   border: 1px transparent black;
@@ -73,12 +75,20 @@ body {
   font-family: 'Nunito'; }
 
 footer {
-  background-color: beige;
+  background-color: white;
   width: 100%;
+  padding-top: 40px;
+  padding-bottom: 30px;
   /* ______________ ICONOS __________________ */ }
+  footer .logo_footer {
+    display: flex;
+    justify-content: center; }
+  footer .copright {
+    text-align: center;
+    padding-top: 80px; }
   footer .social {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 30px 30px 30px 30px;
     list-style: none; }
   footer .social li {
@@ -136,9 +146,14 @@ h5 {
   background-color: #0d1113;
   padding: 2%; }
 
-.img_galeria:hover {
-  transform: scale(1.1);
+.card {
+  border: 1px solid #070707; }
+
+.img_galeria {
   transition: transform 1.5s ease-in-out; }
+
+.img_galeria:hover {
+  transform: scale(1.1); }
 
 /* ___ 5º - CONTACTO _________________*/
 .formulario {

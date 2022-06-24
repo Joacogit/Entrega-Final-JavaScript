@@ -20,14 +20,17 @@
         width: 50%;
         height: 50% ;
     }
-    .animacionLogo:hover{
+    .animacionLogo{
         transform: none;
         
     }
     .social{
         justify-content: center;
     }
-    
+    .logo_footer{
+        height: min-content;
+    }
 
+   
 }
     

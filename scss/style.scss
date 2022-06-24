@@ -42,9 +42,10 @@ main {
 /*____ 3º - PRODUCTOS ______________ */
 
 .card img {
-  max-width: 100%;
+  max-width: 100%; 
   height: 240px;
   object-fit: cover;
+  
 }
 .card-link {
   width: max-content;
@@ -58,14 +59,23 @@ h5 {
 
 .main-galeria1 {
   background-color: nth($colores, 5);
+  
 }
 .fotos {
   background-color: nth($colores, 5);
   padding: 2%;
 }
+
+.card{
+  border: 1px solid rgb(7, 7, 7);
+}
+
+.img_galeria{
+  transition: transform 1.5s ease-in-out;
+}
+
 .img_galeria:hover {
   transform: scale(1.1);
-  transition: transform 1.5s ease-in-out;
 }
 
 /* ___ 5º - CONTACTO _________________*/
