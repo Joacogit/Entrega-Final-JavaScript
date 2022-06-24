@@ -9,12 +9,8 @@
   .animacionLogo {
     width: 50%;
     height: 50%; }
-  .animacionLogo {
-    transform: none; }
   .social {
-    justify-content: center; }
-  .logo_footer {
-    height: min-content; } }
+    justify-content: center; } }
 
 .nav-item:hover, .navbar-brand:hover {
   border: 1px transparent black;
@@ -81,8 +77,8 @@ footer {
   padding-bottom: 30px;
   /* ______________ ICONOS __________________ */ }
   footer .logo_footer {
-    display: flex;
-    justify-content: center; }
+    text-align: center;
+    margin-top: 25px; }
   footer .copright {
     text-align: center;
     padding-top: 80px; }
