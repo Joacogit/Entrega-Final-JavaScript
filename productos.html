@@ -25,7 +25,10 @@
     <title>PRODUCTOS</title>
 
 <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!-- Toastify -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
 <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -33,158 +36,131 @@
 </head>
 
 
-
-
-
 <body>   
        
         
-<div class="container">
-  <header class="titulosh2">
+<div class="container">                                                     <!-- INICIO DIV CONTAINER -->
+            <header class="titulosh2">
     <h2>PRODUCTOS</h2>
       
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        
         <a class="navbar-brand btn" href="index.html">LUCÍMADERA</a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-  
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              
-              <li class="nav-item">         
-                <a class="nav-link nav-item active" href="nosotros.html">Nosotros</a>
-              </li>
-              
-              <li class="nav-item">  
-                <a class="nav-link nav-item active" href="productos.html">Productos</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link nav-item active" href="galeria.html">Galería</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link nav-item active" href="contacto.html">Contacto</a>
-              </li>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-item active" href="nosotros.html"
+                >Nosotros</a
+              >
+            </li>
 
-            </ul>
+            <li class="nav-item">
+              <a class="nav-link nav-item active" href="productos.html"
+                >Productos</a
+              >
+            </li>
 
-        </div> <!-- fin div de la lista -->
+            <li class="nav-item">
+              <a class="nav-link nav-item active" href="galeria.html"
+                >Galería</a
+              >
+            </li>
 
-      </div> <!-- fin div container fluid -->
-    </nav><!-- fin nav -->
-  </header> <!-- fin header -->
-
-
-
-
-
-
-    
-  
-<main> <!-- bootstrap cards -->
-
-    <div class="row g-4"> <!-- __________ PRIMER FILA _________ -->
-    <!-- g4=espaciado entre cards -->
-    
-    
-    <!-- CARD 2 - APLIQUE DE PARED-->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card h-100">
-          <img src="images/Cards/aplique_de_pared.jpeg" alt="aplique de pared">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h5>APLIQUE DE PARED</h5>
-              <p class="card-text"> Construido con madera pintada y laqueada, caños, portalámpara vintage con perilla de encendido/apagado y lámpara de filamentos led cálida decorativa. Envíos a todo el país ¡Consultanos lo que necesites!  
-              </p>
-              <a href="galeria.html" class="card-link btn btn-primary">VER MAS</a>
-            </div>  <!-- card body -->
-        </div>      <!-- card -->
-      </div>        <!-- col -->
-
-    <!-- card 1 - CUADRO CON LAMPARA -->
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="card h-100">
-        <img src="images/Cards/cuadro_con_lampara.jpeg" alt="cuadro con Lampara">
-        <div class="card-body d-flex flex-column justify-content-between">
-          <h5>CUADRO CON LÁMPARA</h5>
-            <p class="card-text"> Madera Pintada y Laqueada. Portalámparas vintage con perilla de encendido/apagado. Lámpara 5 w cálida de filamentos decorativa. Cable textil de color a elección. Medidas: 60 x 38 cm Ideal para apoyar tus llaves, el celu, adornos, una plantita o tus libros preferidos. Envíos a todo el país ¡Consultanos lo que necesites!
-            </p>
-            <a href="galeria.html" class="card-link btn btn-primary">VER MAS</a>
-        </div>  <!-- card body -->
-      </div>    <!-- card -->
-    </div>      <!-- col -->
-
-
-    <!-- card 3 - CUADRO DECO CON LUZ -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card h-100">
-          <img src="images/Cards/cuadro_deco_con_luz.jpeg" alt="cuadro deco con luz">
-              <div class="card-body d-flex flex-column justify-content-between">
-                <h5>CUADRO DECO CON LUZ</h5>
-                 <p class="card-text"> Construido con madera laqueada, lienzo y luces a pilas. Medidas: 68 x 30 cm. Ideal para decorar tu hogar con la palabra o frase que mas te gusta y darle ese toque de iluminación cálido a tu espacio favorito. Envíos a todo el país ¡Consultanos lo que necesites!</p>
-                 <a href="galeria.html" class="card-link btn btn-primary">VER MAS</a>
-              </div>    <!-- card body -->
-        </div>          <!-- card -->
-      </div>            <!-- col -->
-    
-
-   
-    
-    <!-- card 4 - VELADOR DE PARED -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card h-100">
-          <img src="images/Cards/velador_de_pared.jpeg" alt="velador de pared">
-          <div class="card-body d-flex flex-column justify-content-between">
-              <h5>VELADOR DE PARED</h5>
-            <p class="card-text"> Construido con madera pintada y laqueada, caños, portalámpara vintage con perilla de encendido/apagado, cable decorativo textil de color y lámpara de filamentos led cálida decorativa. Muy práctico y cómodo, ideal para colgar sobre tu mesita de luz y tener mas espacio en ella. Consultanos por WhatsApp disponibilidad y colores.</p>
-            <a href="galeria.html" class="card-link btn btn-primary">VER MAS</a>
-          </div>    <!-- card body -->
-        </div>      <!-- card -->
-      </div>        <!-- col -->
-      
-
-    <!-- card 5 - CUADRO CON ESTANTE -->
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="card h-100">
-      <img src="images/Cards/cuadro_con_estante.jpeg" alt="cuadro con estante">
-      <div class="card-body d-flex flex-column justify-content-between">
-            <h5>CUADRO CON ESTANTE</h5>
-          <p class="card-text"> Madera Pintada y Laqueada. Medidas: 60 x 38 cm Ideal para apoyar tus llaves, el celu, adornos, una plantita o tus libros preferidos. Envíos a todo el país ¡Consultanos lo que necesites!</p>
-          <a href="galeria.html" class="card-link btn btn-primary">VER MAS</a>
-        </div>    <!-- card body -->
-      </div>      <!-- card -->
-    </div>        <!-- col -->
-
-    <!-- card 6 - LAMPARA DECO -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="card h-100">
-          <img src="images/Cards/lampara_deco.jpeg" alt="lampara deco">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h5>LÁMPARA DECO</h5>
-            <p class="card-text"> Construida con base de madera pintada y laqueada, caños, portalámpara vintage con perilla de encendido/apagado, cable decorativo textil de color y lámpara de filamentos led cálida decorativa. Medidas de la base: 30 x 12 cm.</p>
-            <a href="galeria.html" class="card-link btn btn-primary">VER MAS</a>
-            </div>
+            <li class="nav-item">
+              <a class="nav-link nav-item active" href="contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+            </header> <!-- Fin header -->
+
+  
+<!-- bootstrap cards -->
+<div class="container-fluid">
+  <div class="row g-4" id="cards_productos">
+  <!-- Contenido JS edit -->
+  </div>
+  <!--→"cards_productos"______________________ fin row cards ________________________ -->
+</div>
+<!-- fin cards-->
+
+
+    <h2 style="padding: 30px">Carrito</h2>
+
+      <div class="container-fluid">   <!-- TABLA COMPRA -->
+        <table id="tabla" class="table" style="padding: 10px">
+            <tr>
+                <!--  <th>ID</th> -->
+                <th>Producto</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th>Eliminar</th>
+            </tr>
+        </table>
+        
+      </div>
+</div>                                                                      <!-- FIN DIV CONTAINER -->
     
+
+<div class="row g-4 d-flex justify-content-center">         <!-- TABLA TOTAL -->
+        <table id="total_compra" class="table">
+        </table>
+
+        <button class="col-4" id="btn" class="form-control"><strong>COMPRAR</strong></button>
+</div>
+
+
+  
+
+<br>
+<br>
+
+
+  <form class="row d-flex justify-content-center" id="formcuotas">
+    <div class= "col-4 " id="">
+      <h6>CALCULE SU PAGO EN CUOTAS</h6>
+
+      <h6 class="">Ingrese el valor total para calcular:</h6>
+      <input id="ingresoValor" class="form-control" type="number" placeholder="Ingrese el valor:">
+      
+
+      
+      
     
-    
-    </div><!-- ________________________ fin row cards ________________________ -->
-    
-    
-</main> <!-- fin cards-->
+      <div class="mb-3">
+        <label for="opcdecuotas" class="form-label">Elija cantidad de cuotas sin interés - 3 | 6 | 12 | 18 -</label>
+        <select class="form-select form-control" id="opcdecuotas" required aria-label="Default select example"></select>
+      </div>
+
+
+      <button id="calcular" class="card-link btn btn-primary"> Calcular </button>
+
+    </div>
+  </form> 
+
+<div class="container-fluid">         <!-- TABLA cuotas -->
+    <table id="tabla_cuotas" class="table">
+    </table>
+</div>
 
 
 
-
-<!-- footer -->
-
-
-<footer class="row"> <!-- inicio footer -->
+<footer class="row">                  <!-- FOOTER -->
   <div class="logo_footer col-4">
   <img src="images/logoblanco-f.jpg" alt="logo_footer">
   </div>
@@ -224,11 +200,21 @@
 
 </footer>
        
-</div> <!-- div container -->
 
 
 
-<!--link body de Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+<!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/clase.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/jsjs.js"></script>
+    
+    
+   
+    
 </body>
 </html>

@@ -117,7 +117,9 @@ main {
   /* alt de cada area */
   grid-template-columns: repeat 3, 1fr;
   /* ancho de cada area */
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer";
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat; }
@@ -133,6 +135,29 @@ main {
 
 h5 {
   font-weight: bold; }
+
+ #total_compra {
+  display:flex;
+  justify-content: center;
+  
+}
+
+#btn {
+  background-color:rgb(228, 225, 225);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#btndelete {
+  color:red;
+  padding: 20px 20px;
+  margin-left: 10px ;
+  margin-top: 10px;
+  border: none;
+  
+}
 
 /*___ 4º - GALERIA _________________ */
 .main-galeria1 {
