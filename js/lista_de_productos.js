@@ -21,12 +21,6 @@ lista_productos.push( new Producto("LÁMPARA DECO", 6000, 6, "Construida con bas
 localStorage.setItem("lista", JSON.stringify(lista_productos));
 
 lista_productos =JSON.parse(localStorage.getItem("lista"));
-console.log(typeof(lista_productos));
 
 
-
-//_________ Destructuring ____________________
-
-let [ nombre1, , , nombre4] = lista_productos;
-console.log(nombre1,nombre4)
 
