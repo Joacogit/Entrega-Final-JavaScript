@@ -1,0 +1,27 @@
+
+
+        /* _______ Media Query_______ */
+
+
+@media (max-width: 991px){
+    
+    h1{
+        padding: 50px;
+        font-size: 20px;
+    }
+    
+    h2{
+        display: none;
+    }
+
+    .animacionLogo{
+        width: 50%;
+        height: 50%;
+    }
+        
+    .social{
+        justify-content: center;
+    }
+    
+}
+    

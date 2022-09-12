@@ -1,0 +1,95 @@
+@import "mediaq";
+@import "base/listas";
+@import "base/extension";
+@import "base/mixin";
+@import "componentes/header";
+@import "componentes/body";
+@import "componentes/footer";
+
+/* ______ 1º INDEX _______________*/
+
+main {
+  background-repeat: no-repeat;
+  background-position: cover;
+  .card-text {
+    text-align: justify;
+    background-color: nth($colores, 3);
+  }
+  .parrafo-principal {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+/*__ 2º NOSOTROS _______________       */
+
+.nosotros {
+  height: 70vh; /* alto del navegador */
+  display: grid; /* activa el GRID */
+  grid-template-rows: repeat (2, 1fr); /* alt de cada area */
+  grid-template-columns: repeat (3, 1fr); /* ancho de cada area */
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/*____ 3º - PRODUCTOS ______________ */
+
+.card img {
+  max-width: 100%; 
+  height: 240px;
+  object-fit: cover;
+  
+}
+.card-link {
+  width: max-content;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+/*___ 4º - GALERIA _________________ */
+
+.main-galeria1 {
+  background-color: nth($colores, 5);
+  
+}
+.fotos {
+  background-color: nth($colores, 5);
+  padding: 2%;
+}
+
+.card{
+  border: 1px solid rgb(7, 7, 7);
+}
+
+.img_galeria{
+  transition: transform 1.5s ease-in-out;
+}
+
+.img_galeria:hover {
+  transform: scale(1.1);
+}
+
+/* ___ 5º - CONTACTO _________________*/
+
+.formulario {
+  background-image: url(../images/iluminacion-para-habitaciones.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: nth($colores, 4);
+}
+
+.fondoFooterContacto {
+  background-image: url(../images/imgfootercontacto.jpg);
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */

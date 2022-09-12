@@ -1,3 +1,16 @@
+//______________________
+
+Toastify({
+    text: "¡No te olvides de seguirnos en las redes!",
+    duration: 5000,
+    gravity: 'bottom',
+    position: 'center'
+}).showToast();
+
+
+
+
+
 const dom_producto = document.getElementById("cards_productos");       
 const dom_carrito = document.getElementById("tabla")                
 for (const elemento of lista_productos) {                           
@@ -15,7 +28,7 @@ for (const elemento of lista_productos) {
         
         <a href="galeria.html" id="ver_mas" class="card-link btn btn-primary">VER MAS</a>
         <hr>
-        <a href="#" id="${elemento.id}" class="btn btn-primary mi_evento">Agregar al Carrito!</a>
+        <!-- <a href="#" id="${elemento.id}" class="btn btn-primary mi_evento">Agregar al Carrito!</a>  -->
         </div>
     </div>
 
@@ -23,11 +36,11 @@ for (const elemento of lista_productos) {
     dom_producto.append(div) 
 }
 
-
-
 // _______________ EVENTO BOTONES DE AGREGAR AL CARRITO _______________________________________________________________
 
-const evento_boton_agregar = document.getElementsByClassName("mi_evento")      
+// const evento_boton_agregar = document.getElementsByClassName("mi_evento")      descomentar
+
+
 
 for (const elemento of evento_boton_agregar) {
     elemento.addEventListener("click", (event) => {                         
@@ -35,16 +48,17 @@ for (const elemento of evento_boton_agregar) {
         console.log(event.target.id)                                        
         
         Swal.fire({
-            position: 'center-center',
+            position: 'center',
             icon: 'success',
             imageUrl: "/images/logo_qr_tarjeta.jpg",
             title: 'Producto agregado!',
             showConfirmButton: false,
-            timer: 2000
+            timer: 1000
         })
 
         let producto = lista_productos.find(item => item.id === parseInt(event.target.id))
-        const tr = document.createElement('tr');  
+        const tr = document.createElement('tr'); 
+         
         
         tr.innerHTML =`
             
@@ -52,7 +66,7 @@ for (const elemento of evento_boton_agregar) {
             <td>${producto.descripcion}</td>
             <td>$ ${producto.precio}</td> 
             <td>
-                <button id="btndelete" class="btnEliminar"
+                <button id="btndelete" 
 
                 data-id="<?php echo $f['id']; ?>"  
                 data-toggle="modal" data-target="modalEliminar">
@@ -67,49 +81,49 @@ for (const elemento of evento_boton_agregar) {
                 </button>
             <hr>
             `
+            
 
         carro.agregaAlCarrito(producto) 
         CambiarValorCarrito()
         dom_carrito.append(tr)     
+    })
+    
+}
+
+
+
+function eliminar (){
+    const BOTONBORRARELEMENTO = document.getElementById("btndelete");
+    BOTONBORRARELEMENTO.addEventListener("click", (event) => {
+        e.preventDefault()            
+        event.target.parentNode.remove()
+    
         
-//____________
-
-
-    })  
+    
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+            Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+            )
+            }
+        })
+    })
 }
 
 
 
 
-let btndelete = document.getElementById("btndelete");
-
-//____ ELIMINAR PRODUCTO_______________
-/*btndelete.addEventListener("click", (event) => {                         
-    event.target.parentNode.remove()
-    Swal.fire({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
-    }).then((result) => {
-        if (result.isConfirmed) {
-        Swal.fire(
-            'Deleted!',
-            'Your file has been deleted.',
-            'success'
-        )
-        }
-    })
-})
-
-*/
-
-
-
-// FORMULARIO DE CALCULAR 
+// FORMULARIO CALCULAR 
 
 //_______________________________FUNCION SELECT CON FETCH_________________________________________________________
 const cargarOpdeCuotas = async () => {
@@ -119,7 +133,9 @@ const cargarOpdeCuotas = async () => {
 
     //al select del html cargar opciones 
     const select = document.getElementById("opcdecuotas");
-    select.innerHTML = data.map((opcdecuotas) => `<option value= "${opcdecuotas.id}">${opcdecuotas.numero}</option>`);       
+    select.innerHTML = data.map((opcdecuotas) => `
+        <option value= "${opcdecuotas.id}">${opcdecuotas.numero}</option> `
+        );
 }                           //map: dev un array 
 cargarOpdeCuotas();
 
@@ -134,17 +150,6 @@ const BTN = document.getElementById('btn').addEventListener('click', () => {
         icon: 'success',
         })
     });
-    
-//______________________
-
-    Toastify({
-        text: "¡No te olvides de seguirnos en las redes!",
-        duration: 5000,
-        gravity: 'bottom',
-        position: 'center'
-    }).showToast();
-
-
     
 
 
